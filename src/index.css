@@ -1,0 +1,42 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: #FFEEE1;
+  color: #111111;
+}
+
+::selection {
+  background-color: #800020;
+  color: #FFEEE1;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFEEE1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #800020;
+  border-radius: 3px;
+}
+
+@layer utilities {
+  .text-gradient-wine {
+    background: linear-gradient(135deg, #800020 0%, #a34a30 50%, #6e001b 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+}
