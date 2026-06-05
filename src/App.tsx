@@ -18,7 +18,7 @@ export default function App() {
         <BusinessConsultant />
         <CreativeWorkshops />
         <TarotReading />
-        <Testimonials />
+        {/* <Testimonials /> */}
         <Contact />
       </main>
       <Footer />

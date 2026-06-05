@@ -1,3 +1,5 @@
+import Liveevent1 from '../assets/Live Event 1.mp4';
+
 export interface GalleryItem {
   type: 'image' | 'video';
   src: string;
@@ -51,7 +53,7 @@ export const emceeCategories: CategoryCard[] = [
     coverImage:
       'https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=600',
     gallery: [
-      { type: 'image', src: 'https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Live Event Hosting' },
+      { type: 'video', src: Liveevent1, caption: 'Live Event Hosting' },
       { type: 'image', src: 'https://images.pexels.com/photos/2609/pexels-photo-2609.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Audience Engagement' },
       { type: 'image', src: 'https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Stage Performance' },
       { type: 'image', src: 'https://images.pexels.com/photos/1190298/pexels-photo-1190298.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Event Opening' },

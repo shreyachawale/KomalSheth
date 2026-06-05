@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { ArrowDown, Send, Eye } from 'lucide-react';
 import { heroData } from '../data/portfolio';
+import komal from '../assets/Komal Profile photo.jpg';
 
 export default function Hero() {
   const scrollTo = (id: string) => {
@@ -12,7 +13,7 @@ export default function Hero() {
       {/* Background image with overlay */}
       <div className="absolute inset-0">
         <img
-          src="https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=1920"
+          src= {komal}
           alt=""
           className="w-full h-full object-cover opacity-20"
         />
@@ -111,7 +112,7 @@ export default function Hero() {
               <div className="absolute -inset-4 bg-gradient-to-br from-wine-500/10 to-transparent rounded-3xl blur-xl" />
               <div className="relative rounded-3xl overflow-hidden border border-wine-200 shadow-2xl shadow-wine-200/30">
                 <img
-                  src={heroData.image}
+                  src={komal}
                   alt="Komal Sheth"
                   className="w-full h-[580px] object-cover"
                 />
