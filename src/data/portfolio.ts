@@ -1,4 +1,14 @@
 import Liveevent1 from '../assets/Live Event 1.mp4';
+import pancake from '../assets/99pan.jpg';
+import barclays from '../assets/barclays.jpg';
+import abk from '../assets/abk.mp4';
+import deli from '../assets/Happiness Deli.jpeg';
+import komal from '../assets/Komal Profile photo.jpg';
+import Publicspeaking from '../assets/Public speaking.mp4';
+import Foodworkshop from '../assets/Food Workshop.mp4'
+import Artworkshop from '../assets/Art Workshop.mp4';
+import tarot from '../assets/Tarot.jpg';
+import Publicspeaking1 from '../assets/Publicspeaking.mp4'
 
 export interface GalleryItem {
   type: 'image' | 'video';
@@ -10,14 +20,16 @@ export interface GalleryItem {
 export interface CategoryCard {
   id: string;
   title: string;
-  coverImage: string;
+  coverImage?: string;
+  video?: string;
   gallery: GalleryItem[];
 }
 
 export interface ClientCard {
   id: string;
   name: string;
-  image: string;
+  image?: string;
+  video?: string;
   description: string;
   caseStudy?: string;
 }
@@ -26,6 +38,7 @@ export interface WorkshopCategory {
   id: string;
   title: string;
   coverImage: string;
+  video?: string;
   gallery: GalleryItem[];
 }
 
@@ -124,17 +137,17 @@ export const consultantData = {
   services: ['Business Development', 'Digital Marketing', 'PR & Media Outreach'],
   clients: [
     {
-      id: 'happiness-delhi',
-      name: 'Happiness Delhi',
-      image: 'https://images.pexels.com/photos/2609/pexels-photo-2609.jpeg?auto=compress&cs=tinysrgb&w=400',
+      id: 'happiness-deli',
+      name: 'Happiness Deli',
+      image: deli,
       description: 'A lifestyle brand focused on curating joyful experiences across Delhi.',
       caseStudy:
-        'Helped Happiness Delhi scale their event portfolio by 3x through targeted digital campaigns and strategic influencer partnerships.',
+        'Helped Happiness Deli scale their event portfolio by 3x through targeted digital campaigns and strategic influencer partnerships.',
     },
     {
       id: '99-pancakes',
       name: '99 Pancakes',
-      image: 'https://images.pexels.com/photos/37646/pexels-photo-37646.jpeg?auto=compress&cs=tinysrgb&w=400',
+      image: pancake,
       description: 'A popular food chain known for its creative pancake offerings.',
       caseStudy:
         'Drove 40% footfall increase through local SEO, social media engagement, and community event collaborations.',
@@ -142,8 +155,8 @@ export const consultantData = {
     {
       id: 'abk-media',
       name: 'ABK Media',
-      image: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=400',
-      description: 'A media production house delivering compelling visual storytelling.',
+      video: abk,
+      description: 'Red carpet event for Vietnamese film launch.',
       caseStudy:
         'Expanded their client base by 60% through PR placements in top-tier publications and media outreach strategy.',
     },
@@ -155,7 +168,7 @@ export const workshopData = {
     {
       id: 'food-workshops',
       title: 'Food Workshops',
-      coverImage: 'https://images.pexels.com/photos/37646/pexels-photo-37646.jpeg?auto=compress&cs=tinysrgb&w=600',
+      video: Foodworkshop,
       gallery: [
         { type: 'image', src: 'https://images.pexels.com/photos/37646/pexels-photo-37646.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Culinary Workshop' },
         { type: 'image', src: 'https://images.pexels.com/photos/1640777/pexels-photo-1640777.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Cooking Session' },
@@ -165,7 +178,7 @@ export const workshopData = {
     {
       id: 'art-workshops',
       title: 'Art Workshops',
-      coverImage: 'https://images.pexels.com/photos/1762862/pexels-photo-1762862.jpeg?auto=compress&cs=tinysrgb&w=600',
+      video: Artworkshop,
       gallery: [
         { type: 'image', src: 'https://images.pexels.com/photos/1762862/pexels-photo-1762862.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Art Workshop' },
         { type: 'image', src: 'https://images.pexels.com/photos/2859724/pexels-photo-2859724.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Painting Session' },
@@ -175,7 +188,7 @@ export const workshopData = {
     {
       id: 'public-speaking',
       title: 'Public Speaking Workshops',
-      coverImage: 'https://images.pexels.com/photos/3756165/pexels-photo-3756165.jpeg?auto=compress&cs=tinysrgb&w=600',
+      video: Publicspeaking1,
       gallery: [
         { type: 'image', src: 'https://images.pexels.com/photos/3756165/pexels-photo-3756165.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Public Speaking' },
         { type: 'image', src: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Workshop Session' },
@@ -184,7 +197,7 @@ export const workshopData = {
     {
       id: 'corporate-workshops',
       title: 'Corporate Workshops',
-      coverImage: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=600',
+      video: Publicspeaking,
       gallery: [
         { type: 'image', src: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Corporate Training' },
         { type: 'image', src: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Team Building' },
@@ -193,7 +206,7 @@ export const workshopData = {
   ] as WorkshopCategory[],
   featuredClient: {
     name: 'Barclays',
-    logo: 'https://images.pexels.com/photos/3184291/pexels-photo-3184291.jpeg?auto=compress&cs=tinysrgb&w=400',
+    logo: barclays ,
     description: 'Facilitated leadership and communication workshops for Barclays teams.',
   },
 };
@@ -204,8 +217,7 @@ export const tarotData = {
     'Personalized tarot sessions for wisdom seekers seeking clarity, guidance, and self-reflection.',
   badge: 'Available By Appointment Only',
   cta: 'Book A Session',
-  image:
-    'https://images.pexels.com/photos/1024960/pexels-photo-1024960.jpeg?auto=compress&cs=tinysrgb&w=600',
+  image: tarot,
 };
 
 export const testimonials: Testimonial[] = [

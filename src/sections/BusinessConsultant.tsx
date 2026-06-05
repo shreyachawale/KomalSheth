@@ -61,13 +61,24 @@ export default function BusinessConsultant() {
                 className="bg-white rounded-2xl overflow-hidden border border-cream-200 hover:border-wine-500/30 transition-colors duration-300 group shadow-sm"
               >
                 <div className="aspect-[16/10] overflow-hidden">
-                  <img
-                    src={client.image}
-                    alt={client.name}
-                    loading="lazy"
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                </div>
+  {client.video ? (
+    <video
+      src={client.video}
+      autoPlay
+      muted
+      loop
+      playsInline
+      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    />
+  ) : (
+    <img
+      src={client.image}
+      alt={client.name}
+      loading="lazy"
+      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+    />
+  )}
+</div>
                 <div className="p-6">
                   <h4 className="font-display text-lg text-primary font-semibold mb-2">
                     {client.name}

@@ -28,12 +28,23 @@ export default function CreativeWorkshops() {
               onClick={() => setActiveGallery(cat.id)}
               className="group cursor-pointer relative rounded-2xl overflow-hidden aspect-[3/4] shadow-lg hover:shadow-xl transition-shadow duration-300"
             >
-              <img
-                src={cat.coverImage}
-                alt={cat.title}
-                loading="lazy"
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
-              />
+              {cat.video ? (
+  <video
+    src={cat.video}
+    autoPlay
+    muted
+    loop
+    playsInline
+    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+  />
+) : (
+  <img
+    src={cat.coverImage}
+    alt={cat.title}
+    loading="lazy"
+    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+  />
+)}
               <div className="absolute inset-0 bg-gradient-to-t from-primary/70 via-primary/20 to-transparent group-hover:from-primary/80 transition-colors duration-300" />
               <div className="absolute inset-0 flex items-end p-5">
                 <h3 className="font-display text-lg text-cream-50 font-semibold">{cat.title}</h3>

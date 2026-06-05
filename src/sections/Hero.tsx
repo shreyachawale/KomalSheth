@@ -2,6 +2,7 @@ import { motion } from 'framer-motion';
 import { ArrowDown, Send, Eye } from 'lucide-react';
 import { heroData } from '../data/portfolio';
 import komal from '../assets/Komal Profile photo.jpg';
+import komal1 from '../assets/Komal Profile photo 2.jpeg';
 
 export default function Hero() {
   const scrollTo = (id: string) => {
@@ -112,7 +113,7 @@ export default function Hero() {
               <div className="absolute -inset-4 bg-gradient-to-br from-wine-500/10 to-transparent rounded-3xl blur-xl" />
               <div className="relative rounded-3xl overflow-hidden border border-wine-200 shadow-2xl shadow-wine-200/30">
                 <img
-                  src={komal}
+                  src={komal1}
                   alt="Komal Sheth"
                   className="w-full h-[580px] object-cover"
                 />
