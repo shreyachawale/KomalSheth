@@ -3,12 +3,16 @@ import pancake from '../assets/99pan.jpg';
 import barclays from '../assets/barclays.jpg';
 import abk from '../assets/abk.mp4';
 import deli from '../assets/Happiness Deli.jpeg';
-import komal from '../assets/Komal Profile photo.jpg';
 import Publicspeaking from '../assets/Public speaking.mp4';
 import Foodworkshop from '../assets/Food Workshop.mp4'
 import Artworkshop from '../assets/Art Workshop.mp4';
 import tarot from '../assets/Tarot.jpg';
 import Publicspeaking1 from '../assets/Publicspeaking.mp4'
+import event from '../assets/Live events.jpeg'
+import interview from '../assets/Interviews.mp4';
+import wedding from '../assets/Wedding.mp4';
+import interview2 from '../assets/Interview2.mp4';
+import celebrity from '../assets/Celebrity.mp4';
 
 export interface GalleryItem {
   type: 'image' | 'video';
@@ -63,8 +67,7 @@ export const emceeCategories: CategoryCard[] = [
   {
     id: 'live-events',
     title: 'Live Events',
-    coverImage:
-      'https://images.pexels.com/photos/1540406/pexels-photo-1540406.jpeg?auto=compress&cs=tinysrgb&w=600',
+    coverImage: event,
     gallery: [
       { type: 'video', src: Liveevent1, caption: 'Live Event Hosting' },
       { type: 'image', src: 'https://images.pexels.com/photos/2609/pexels-photo-2609.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Audience Engagement' },
@@ -75,8 +78,7 @@ export const emceeCategories: CategoryCard[] = [
   {
     id: 'digital-tv',
     title: 'Digital / TV Shows',
-    coverImage:
-      'https://images.pexels.com/photos/2580331/pexels-photo-2580331.jpeg?auto=compress&cs=tinysrgb&w=600',
+    video : interview,
     gallery: [
       { type: 'image', src: 'https://images.pexels.com/photos/2580331/pexels-photo-2580331.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'TV Show Hosting' },
       { type: 'image', src: 'https://images.pexels.com/photos/2873486/pexels-photo-2873486.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Digital Broadcast' },
@@ -86,8 +88,7 @@ export const emceeCategories: CategoryCard[] = [
   {
     id: 'weddings',
     title: 'Weddings',
-    coverImage:
-      'https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg?auto=compress&cs=tinysrgb&w=600',
+    video: wedding,
     gallery: [
       { type: 'image', src: 'https://images.pexels.com/photos/3014856/pexels-photo-3014856.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Wedding Emceeing' },
       { type: 'image', src: 'https://images.pexels.com/photos/1444442/pexels-photo-1444442.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Ceremony Hosting' },
@@ -98,8 +99,7 @@ export const emceeCategories: CategoryCard[] = [
   {
     id: 'corporate',
     title: 'Corporate Events',
-    coverImage:
-      'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=600',
+    video : Publicspeaking1,
     gallery: [
       { type: 'image', src: 'https://images.pexels.com/photos/1181406/pexels-photo-1181406.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Corporate Gala' },
       { type: 'image', src: 'https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Conference Stage' },
@@ -109,8 +109,7 @@ export const emceeCategories: CategoryCard[] = [
   {
     id: 'interviews',
     title: 'Interviews',
-    coverImage:
-      'https://images.pexels.com/photos/3756165/pexels-photo-3756165.jpeg?auto=compress&cs=tinysrgb&w=600',
+    video : interview2,
     gallery: [
       { type: 'image', src: 'https://images.pexels.com/photos/3756165/pexels-photo-3756165.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Interview Session' },
       { type: 'image', src: 'https://images.pexels.com/photos/3760067/pexels-photo-3760067.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Panel Discussion' },
@@ -120,8 +119,7 @@ export const emceeCategories: CategoryCard[] = [
   {
     id: 'celebrity-hni',
     title: 'Celebrity & HNI Events',
-    coverImage:
-      'https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=600',
+    video: celebrity,
     gallery: [
       { type: 'image', src: 'https://images.pexels.com/photos/3171837/pexels-photo-3171837.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'Celebrity Event' },
       { type: 'image', src: 'https://images.pexels.com/photos/2261477/pexels-photo-2261477.jpeg?auto=compress&cs=tinysrgb&w=800', caption: 'VIP Gathering' },
