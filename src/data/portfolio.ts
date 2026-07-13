@@ -1,6 +1,6 @@
 import Liveevent1 from '../assets/Live Event 1.mp4';
 import pancake from '../assets/99pan.jpg';
-import barclays from '../assets/barclays.jpg';
+import barclays from '../assets/barclayss.jpg';
 import abk from '../assets/abk.mp4';
 import deli from '../assets/Happiness Deli.jpeg';
 import Publicspeaking from '../assets/Public speaking.mp4';
