@@ -3,7 +3,7 @@ import { useState } from 'react';
 const categories = [
   {
     title: 'Brand Strategy & Positioning',
-    clients: ['Happiness Deli'],
+    clients: ['Happiness Deli','Heeramaneck’s and sons'],
   },
   {
     title: 'Personal & Business Branding',
