@@ -7,6 +7,7 @@ import CreativeWorkshops from './sections/CreativeWorkshops';
 import TarotReading from './sections/TarotReading';
 import Testimonials from './sections/Testimonials';
 import Contact from './sections/Contact';
+import BrandBuilding from './components/BrandBuilding';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
         <EmceePortfolio />
         <BusinessConsultant />
         <CreativeWorkshops />
+        <BrandBuilding />
         <TarotReading />
         {/* <Testimonials /> */}
         <Contact />
