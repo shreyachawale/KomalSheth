@@ -1,4 +1,4 @@
-import { Mail, MessageCircle, Instagram, Linkedin, Heart } from 'lucide-react';
+import { Mail, MessageCircle, Linkedin, Heart } from 'lucide-react';
 import { contactData, navLinks } from '../data/portfolio';
 
 export default function Footer() {
@@ -9,7 +9,6 @@ export default function Footer() {
   const socialLinks = [
     { icon: <Mail size={18} />, href: `mailto:${contactData.email}`, label: 'Email' },
     { icon: <MessageCircle size={18} />, href: contactData.whatsapp, label: 'WhatsApp' },
-    { icon: <Instagram size={18} />, href: contactData.instagram, label: 'Instagram' },
     { icon: <Linkedin size={18} />, href: contactData.linkedin, label: 'LinkedIn' },
   ];
 
@@ -23,7 +22,7 @@ export default function Footer() {
               Komal <span className="text-gradient-wine">Sheth</span>
             </h3>
             <p className="font-body text-sm text-secondary leading-relaxed max-w-sm">
-              Presenter, Emcee, Business Consultant, Workshop Facilitator, and Tarot Reader — bringing expertise and elegance to every engagement.
+              Presenter, Emcee, Workshop Facilitator bringing expertise and elegance to every engagement.
             </p>
           </div>
 

@@ -40,7 +40,7 @@ export default function GalleryModal({ title, items, isOpen, onClose }: Props) {
               initial={{ opacity: 0, y: 40 }}
               animate={{ opacity: 1, y: 0 }}
               exit={{ opacity: 0, y: 40 }}
-              className="w-full max-w-5xl mx-4 my-8 bg-bg rounded-2xl border border-cream-200 overflow-hidden"
+              className="w-full max-w-5xl mx-4 my-8 bg-surface rounded-2xl border border-cream-200 overflow-hidden"
               onClick={(e) => e.stopPropagation()}
             >
               {/* Header */}

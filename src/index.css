@@ -10,13 +10,13 @@ body {
   font-family: 'Inter', system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: #FFEEE1;
-  color: #111111;
+  background-color: #5D6B59;
+  color: #F8F6EC;
 }
 
 ::selection {
-  background-color: #800020;
-  color: #FFEEE1;
+  background-color: #D9A94D;
+  color: #263526;
 }
 
 ::-webkit-scrollbar {
@@ -24,19 +24,24 @@ body {
 }
 
 ::-webkit-scrollbar-track {
-  background: #FFEEE1;
+  background: #5D6B59;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #800020;
+  background: #D9A94D;
   border-radius: 3px;
 }
 
 @layer utilities {
   .text-gradient-wine {
-    background: linear-gradient(135deg, #800020 0%, #a34a30 50%, #6e001b 100%);
+    background: linear-gradient(135deg, #F4D486 0%, #D9A94D 48%, #B77E31 100%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
   }
 }
+
+.bg-surface .text-primary { color: #263526; }
+.bg-surface .text-secondary { color: #566452; }
+.bg-surface input.text-primary,
+.bg-surface textarea.text-primary { color: #263526; }

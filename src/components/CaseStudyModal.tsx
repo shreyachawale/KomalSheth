@@ -23,7 +23,7 @@ export default function CaseStudyModal({ clientName, caseStudy, isOpen, onClose 
             initial={{ opacity: 0, scale: 0.95 }}
             animate={{ opacity: 1, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95 }}
-            className="w-full max-w-lg bg-bg rounded-2xl border border-cream-200 p-8"
+            className="w-full max-w-lg bg-surface rounded-2xl border border-cream-200 p-8"
             onClick={(e) => e.stopPropagation()}
           >
             <div className="flex items-center justify-between mb-4">

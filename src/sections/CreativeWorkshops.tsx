@@ -59,7 +59,7 @@ export default function CreativeWorkshops() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: '-50px' }}
           transition={{ duration: 0.6 }}
-          className="bg-white rounded-3xl overflow-hidden border border-cream-200 shadow-sm"
+          className="bg-surface rounded-3xl overflow-hidden border border-cream-200 shadow-sm"
         >
           <div className="grid md:grid-cols-2 items-center">
             <div className="aspect-video md:aspect-auto md:h-full">

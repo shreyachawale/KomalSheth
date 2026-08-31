@@ -4,8 +4,6 @@ import Hero from './sections/Hero';
 import EmceePortfolio from './sections/EmceePortfolio';
 import BusinessConsultant from './sections/BusinessConsultant';
 import CreativeWorkshops from './sections/CreativeWorkshops';
-import TarotReading from './sections/TarotReading';
-import Testimonials from './sections/Testimonials';
 import Contact from './sections/Contact';
 import BrandBuilding from './components/BrandBuilding';
 

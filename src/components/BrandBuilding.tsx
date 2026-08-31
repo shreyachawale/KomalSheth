@@ -64,7 +64,7 @@ function getInitials(name: string): string {
 
 const RAW_CATEGORIES: RawCategory[] = [
   {
-    title: 'Brand Strategy & Positioning',
+    title: 'Brand Strategy & PR',
     icon: <Compass size={20} />,
     subcategories: [
       'Personal & Business Branding',
@@ -76,7 +76,7 @@ const RAW_CATEGORIES: RawCategory[] = [
       { name: "Heeramaneck's and Sons", logo: heermanakLogo },
       { name: 'Vikesh Shah' },
       { name: 'Sonal Holland' },
-      { name: 'Gera Song of Joy' },
+      { name: 'Vritti Avichal Published Books', logo: avichalLogo },
     ],
   },
   {
@@ -99,16 +99,21 @@ const RAW_CATEGORIES: RawCategory[] = [
       'Editorial Planning and Proofreading',
     ],
     brands: [
-      { name: 'Radio One', logo: radioOneLogo },
       { name: 'Vritti Avichal Published Books', logo: avichalLogo },
       { name: 'Limca Book of Record Holder', logo: limcaLogo },
     ],
   },
   {
-    title: 'PR & Media Content',
+    title: 'Media Content',
     icon: <Megaphone size={20} />,
     subcategories: ['Speech, Presentation & Keynote Writing', 'Media Collab'],
-    brandNames: ['Multiple Corporates'],
+    brands: [
+      { name: 'Radio One', logo: radioOneLogo },
+      { name: 'BeGlamrs' },
+      { name: 'Vygr Media' },
+      { name: 'ThoughtShop Foundation', logo: thoughtShopLogo },
+      { name: 'Vaani Deaf Children Society' },
+    ],
   },
   {
     title: 'Events',
@@ -149,11 +154,11 @@ const categories: Category[] = RAW_CATEGORIES.map((category, index) => ({
 }));
 
 const PALETTE = [
-  { bg: '#8b1a2f', light: '#fdf3ec', dot: '#c25472' },
-  { bg: '#1a4d6b', light: '#eef5fa', dot: '#3a7fa0' },
-  { bg: '#3b5e2b', light: '#edf4ea', dot: '#5c8f47' },
-  { bg: '#6b3a1a', light: '#faf0e8', dot: '#c2763a' },
-  { bg: '#2d2b6b', light: '#eeeefc', dot: '#5f5dba' },
+  { bg: '#66755F', light: '#E7E9DA', dot: '#D9A94D' },
+  { bg: '#788664', light: '#EDF0E3', dot: '#E4BA5E' },
+  { bg: '#4F604C', light: '#E0E5D8', dot: '#CF9A42' },
+  { bg: '#8A7A51', light: '#F1EBD9', dot: '#D9A94D' },
+  { bg: '#536754', light: '#E4E9DD', dot: '#E1B65C' },
 ];
 
 export default function BrandBuilding() {
@@ -164,18 +169,18 @@ export default function BrandBuilding() {
   const palette = selected !== null ? PALETTE[selected % PALETTE.length] : PALETTE[0];
 
   return (
-    <section className="bg-[#fdf3ec] py-20 px-4 sm:px-8 lg:px-16 font-serif">
+    <section className="bg-bg py-20 px-4 sm:px-8 lg:px-16 font-serif">
       <div className="max-w-7xl mx-auto mb-14">
         <div className="flex items-center gap-3 mb-3">
-          <div className="w-8 h-[2px] bg-[#8b1a2f] rounded-full" />
-          <p className="text-[#8b1a2f] uppercase tracking-[0.22em] text-xs font-sans font-semibold">
+          <div className="w-8 h-[2px] bg-wine-500 rounded-full" />
+          <p className="text-wine-400 uppercase tracking-[0.22em] text-xs font-sans font-semibold">
             Portfolio
           </p>
         </div>
-        <h2 className="text-4xl sm:text-5xl font-bold text-[#1a1a1a] leading-tight">
-          Brand Building <span className="text-[#8b1a2f]">and more...</span>
+        <h2 className="text-4xl sm:text-5xl font-bold text-primary leading-tight">
+          Brand Building <span className="text-gradient-wine">and more...</span>
         </h2>
-        <p className="mt-5 text-[#5a4a42] font-sans text-base leading-relaxed max-w-2xl">
+        <p className="mt-5 text-secondary font-sans text-base leading-relaxed max-w-2xl">
           A curated selection of brands, individuals, and institutions shaped through strategy,
           storytelling, and creative content.
         </p>
@@ -193,7 +198,7 @@ export default function BrandBuilding() {
               className={`group relative rounded-2xl border-2 text-left transition-all duration-300 overflow-hidden focus:outline-none focus-visible:ring-2 focus-visible:ring-offset-2 ${
                 isActive
                   ? 'border-transparent shadow-xl scale-[1.02]'
-                  : 'border-[#e8d5c8] bg-white/70 hover:bg-white hover:shadow-md hover:-translate-y-0.5'
+                  : 'border-cream-300 bg-surface/95 hover:bg-surface hover:shadow-md hover:-translate-y-0.5'
               }`}
               style={isActive ? { backgroundColor: categoryPalette.bg } : undefined}
             >
@@ -210,13 +215,13 @@ export default function BrandBuilding() {
                 </div>
                 <h3
                   className="font-sans font-semibold text-sm leading-snug transition-colors duration-300"
-                  style={{ color: isActive ? '#fff' : '#1a1a1a' }}
+                  style={{ color: isActive ? '#fff' : '#263526' }}
                 >
                   {category.title}
                 </h3>
                 <p
                   className="font-sans text-xs mt-1 transition-colors duration-300"
-                  style={{ color: isActive ? 'rgba(255,255,255,0.65)' : '#9e8077' }}
+                  style={{ color: isActive ? 'rgba(255,255,255,0.65)' : '#687863' }}
                 >
                   {category.brands.length} brand{category.brands.length !== 1 ? 's' : ''}
                 </p>
@@ -240,7 +245,7 @@ export default function BrandBuilding() {
         <div
           key={activeCategory.id}
           className="max-w-7xl mx-auto rounded-3xl overflow-hidden shadow-2xl animate-fade-in"
-          style={{ backgroundColor: '#fff' }}
+          style={{ backgroundColor: '#F6F4E9' }}
         >
           <div className="px-8 py-7 flex items-center gap-4" style={{ backgroundColor: palette.bg }}>
             <div
@@ -285,7 +290,7 @@ export default function BrandBuilding() {
               </div>
             </div>
 
-            <div className="h-px bg-[#ede4dc] mb-8" />
+            <div className="h-px bg-cream-200 mb-8" />
 
             <div>
               <p
@@ -298,9 +303,9 @@ export default function BrandBuilding() {
                 {activeCategory.brands.map((brand) => (
                   <div
                     key={brand.name}
-                    className="flex items-center gap-3 rounded-2xl border border-[#ede4dc] bg-[#fffaf6] px-4 py-3"
+                    className="flex items-center gap-3 rounded-2xl border border-cream-200 bg-cream-50 px-4 py-3"
                   >
-                    <div className="w-10 h-10 flex-shrink-0 rounded-lg overflow-hidden bg-white border border-[#ede4dc] flex items-center justify-center">
+                    <div className="w-10 h-10 flex-shrink-0 rounded-lg overflow-hidden bg-white border border-cream-200 flex items-center justify-center">
                       {brand.logo && !imgError[brand.name] ? (
                         <img
                           src={brand.logo}
@@ -319,7 +324,7 @@ export default function BrandBuilding() {
                         </div>
                       )}
                     </div>
-                    <span className="font-sans text-xs font-semibold text-[#2a1f1a] leading-tight line-clamp-2">
+                    <span className="font-sans text-xs font-semibold text-ink leading-tight line-clamp-2">
                       {brand.name}
                     </span>
                   </div>
@@ -332,7 +337,7 @@ export default function BrandBuilding() {
 
       {!activeCategory && (
         <div className="max-w-7xl mx-auto text-center py-6">
-          <p className="font-sans text-xs text-[#9e8077] uppercase tracking-widest">
+          <p className="font-sans text-xs text-cream-300 uppercase tracking-widest">
             Select a category to explore brands
           </p>
         </div>

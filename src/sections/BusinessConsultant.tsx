@@ -32,7 +32,7 @@ export default function BusinessConsultant() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: '-50px' }}
               transition={{ duration: 0.5, delay: i * 0.1 }}
-              className="bg-white border border-cream-200 rounded-2xl p-8 text-center hover:border-wine-500/30 transition-colors duration-300 group shadow-sm"
+              className="bg-surface border border-cream-200 rounded-2xl p-8 text-center hover:border-wine-500/60 transition-colors duration-300 group shadow-sm"
             >
               <div className="w-16 h-16 mx-auto mb-5 rounded-full bg-wine-50 flex items-center justify-center text-wine-500 group-hover:bg-wine-100 transition-colors">
                 {serviceIcons[i]}
@@ -58,7 +58,7 @@ export default function BusinessConsultant() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: '-50px' }}
                 transition={{ duration: 0.5, delay: i * 0.1 }}
-                className="bg-white rounded-2xl overflow-hidden border border-cream-200 hover:border-wine-500/30 transition-colors duration-300 group shadow-sm"
+                className="bg-surface rounded-2xl overflow-hidden border border-cream-200 hover:border-wine-500/60 transition-colors duration-300 group shadow-sm"
               >
                 <div className="aspect-[16/10] overflow-hidden">
   {client.video ? (

@@ -14,7 +14,7 @@ export default function TestimonialCard({ testimonial, index }: Props) {
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, margin: '-50px' }}
       transition={{ duration: 0.5, delay: index * 0.1 }}
-      className="bg-white rounded-2xl p-8 shadow-lg shadow-primary/5 border border-cream-200 hover:shadow-xl hover:shadow-wine-200/20 transition-shadow duration-300"
+      className="bg-surface rounded-2xl p-8 shadow-lg shadow-primary/5 border border-cream-200 hover:shadow-xl hover:shadow-wine-200/20 transition-shadow duration-300"
     >
       <div className="flex gap-1 mb-4">
         {[...Array(5)].map((_, i) => (

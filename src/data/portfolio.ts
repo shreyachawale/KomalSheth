@@ -56,7 +56,7 @@ export interface Testimonial {
 
 export const heroData = {
   name: 'Komal Sheth',
-  tagline: 'Presenter | Emcee | Business Consultant | Workshop Facilitator | Tarot Reader',
+  tagline: 'Presenter | Emcee | Business Consultant | Workshop Facilitator',
   intro:
     'A dynamic professional who brings energy, elegance, and expertise to every stage — from live events and TV shows to business consulting and creative workshops.',
   image:
@@ -132,7 +132,7 @@ export const consultantData = {
   title: 'Business Consultant',
   subtitle:
     'Helping brands grow through business development, digital marketing, and strategic media outreach.',
-  services: ['Business Development', 'Digital Marketing', 'PR & Media Outreach'],
+  services: ['Business Development', 'Print & Publishing Content', 'PR & Media Outreach'],
   clients: [
     {
       id: 'happiness-deli',
@@ -254,9 +254,8 @@ export const testimonials: Testimonial[] = [
 ];
 
 export const contactData = {
-  email: 'komal@komalsheth.com',
+  email: 'komalsheth14@gmail.com',
   whatsapp: 'https://wa.me/919999999999',
-  instagram: 'https://instagram.com/komalsheth',
   linkedin: 'https://linkedin.com/in/komalsheth',
 };
 
@@ -265,7 +264,6 @@ export const navLinks = [
   { label: 'Portfolio', href: '#emcee' },
   { label: 'Consulting', href: '#consulting' },
   { label: 'Workshops', href: '#workshops' },
-  { label: 'Tarot', href: '#tarot' },
   { label: 'Testimonials', href: '#testimonials' },
   { label: 'Contact', href: '#contact' },
 ];
